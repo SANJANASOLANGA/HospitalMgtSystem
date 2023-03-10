@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Contact us</title>
+     <link rel="stylesheet" href="navigationBar.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete Round">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+        #dev{
+            color: #1f0f00;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "a b""c d";
+            font-family: "Martel", serif;
+            font-size: 110%;
+            margin-left: 3%;
+        }
+        #img{
+            width: 80%;
+            height: 80%;
+            grid-area: d;
+            cursor: -webkit-grab; 
+            cursor: grab;
+        }
+        form{
+            font-family: "Crete Round", serif;
+            font-size: 130%;
+            grid-area: b;
+        }
+        #sp{
+            font-weight: bold;
+        }
+        #sp2{
+            margin-right: 20%;
+        }
+        form{
+            background-color: #d5f5d8;
+        }
+        input[type=text]{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 30%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 2%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]{
+            margin-left: 40%;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .star{
+            color: red;
+            font-size: 115%;
+        }
+        #span1{
+            font-size: 90%;
+            color: red;
+        }
+    </style>
+ </head>
+    <body>
+        <table id='table1'>
+            <tr>
+                <th id='th1'>
+                    <a href="index.html">
+                        <image src="aragi.gif" 
+                              alt="Aragi Hospital Logo"
+                              width=110
+                              height=55
+                              title="Aragi Hospital Main Menu"
+                        />
+                    <a/>
+                </th>
+                <th>
+                    <a href="AboutUs.html">About<br/>Us<a/>
+                </th>
+                <th>
+                    <a href="Centers.html">Our<br/> Centers<a/>
+                </th>
+                <th>
+                    <a href="Services.html">Our<br/> Services<a/>
+                </th>
+                <th>
+                    <a href="MedicalPackages.html">Medical <br/>Packages<a/>
+                </th>
+                <th>
+                    <a href="InternationalPatients.html"> International<br/> Patients <a/></th>
+                <th>
+                    <a href="Careers.html">Careers<a/></th>
+                <th>
+                    <a href="ContactUs.html">Contact<br/> Us<a/>
+                </th>
+            </tr>
+        </table>
+        <span id="head">Contact Us</span>
+        <div id='dev'>
+            <p>
+                <span id="sp">Directions to Aragi Hospitals</span>
+                <br/>
+                <br/><span id="sp2">Aragi Hospitals is located in Rajagiriya in front of the Ayurvedic Medical Hospital.</span>
+            </p>
+            <form action=""  method="post">
+                <table>
+                    <tr>
+                        <td><label>Your Name<sup class="star">*</sup></label></td>
+                        <td><input type="text" name="fullName" id="fname"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email<sup class="star">*</sup></label></td>
+                        <td><input type="text" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Telephone<sup class="star">*</sup></label></td>
+                        <td><input type="text" name="tel" id="tel"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Message<sup class="star">*</sup></label></td>
+                        <td><textarea name="msg" rows="5" cols="30" id="msg"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span id="span1"><sup>* </sup> Required</span></td>
+                    </tr>
+                </table>                
+            </form>
+            <a href="https://www.google.com/maps/place/University+of+Sri+Jayewardenepura/@6.852767,79.9035846,15z/data=!4m5!3m4!1s0x0:0xa8c769f4b86d85b5!8m2!3d6.852767!4d79.9035846?hl=en-GB">
+                <image id="img" src="map.PNG" 
+                      alt="Aragi Hospital Map"
+                      title="Map"
+                />
+            <a/>
+            <p>Aragi Hospitals PLC<br/>Colombo 7,<br/>Sri Lanka
+                <br/><br/>
+                General Line : +94 (0) 112916610
+                <br/>
+                Channeling Hotline : +94 (0) 112916611
+                <br/>
+                Fax : +94 (0) 11 2916613
+                <br/>
+                Email : aragi&#64hospitals.lk</p>
+        </div>
+    </body>
+</html>
+

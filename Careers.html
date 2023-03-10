@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Careers | Aragi Hospitals</title>
+    <link rel="stylesheet" href="navigationBar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+        form{
+            background-color: #d5f5d8;
+        }
+        input[type=text], select{
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=submit],[type=reset]{
+            width: 30%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 2%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]{
+            margin-left: 20%;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        p{
+            margin-left: 3%;
+            margin-top: 1%;
+            font-size: 140%;
+            color: #633909;
+            font-family: "Trirong", serif;
+            text-align: left;
+            font-weight: bold;
+        }
+        #table{
+            padding:1px;
+            /*background-color: #d5f5d8;*/
+            border-collapse: separate;
+            width: 70%;
+            table-layout: fixed;
+            font-size: 99%;
+            color: #154233;
+            font-family: "Nanum Gothic", serif;
+        }
+        #title{
+            font-family: "Nanum Gothic", serif;
+            color: #02360e;
+            font-size: 160%;
+            display: table;
+            margin-left: 30%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+            text-align: center;
+        }
+        .label{
+            font-family: "Crete Round", serif;
+            font-size: 125%;
+            margin-left: 8%;
+        }
+        td{
+            width: 50%;
+            text-align: justify;
+            border: 12px solid gray;
+            border-color: #d5f5d8;
+            justify-content: center;
+            vertical-align: top;
+            /*color: #1f0f00;*/
+        }
+        .star{
+            color: red;
+            font-size: 115%;
+        }
+/*        span{
+            font-family: "Nanum Gothic", serif;
+        }*/
+    </style>
+ </head>
+    <body>
+        <table id='table1'>
+            <tr>
+                <th id='th1'>
+                    <a href="index.html">
+                        <image src="aragi.gif" 
+                              alt="Aragi Hospital Logo"
+                              width=110
+                              height=55
+                              title="Aragi Hospital Main Menu"
+                        />
+                    <a/>
+                </th>
+                <th>
+                    <a href="AboutUs.html">About<br/>Us<a/>
+                </th>
+                <th>
+                    <a href="Centers.html">Our<br/> Centers<a/>
+                </th>
+                <th>
+                    <a href="Services.html">Our<br/> Services<a/>
+                </th>
+                <th>
+                    <a href="MedicalPackages.html">Medical <br/>Packages<a/>
+                </th>
+                <th>
+                    <a href="InternationalPatients.html"> International<br/> Patients <a/></th>
+                <th>
+                    <a href="Careers.html">Careers<a/></th>
+                <th>
+                    <a href="ContactUs.html">Contact<br/> Us<a/>
+                </th>
+            </tr>
+        </table>
+            <span id="head">Carrers</span>
+            <div id='div'>
+               <p>Be a part of an internationally recognized, leading hospital and 
+                   see your career grow! Aragi Hospitals is always on the lookout 
+                   for qualified, professional and compassionate individuals who 
+                   could join its award-winning team. Click below for existing vacancies.
+               </p>
+               <form action="">
+                    <table id="table">
+                        <tr id='header'>
+                            <th colspan="2"><span id='title'>Join with us!!!</span></th>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Title<sup class="star">*</sup></label></td>
+                            <td>
+                                <input type="radio" name="title" value="mr">Mr.
+                                 <input type="radio" name="title" value="ms">Ms.
+                                 <input type="radio" name="title" value="mrs">Mrs.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Name with Intials<sup class="star">*</sup></label></td>
+                            <td><input type="text" name="intName" id="intName"></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Calling Name<sup class="star">*</sup></label></td>
+                            <td><input type="text" name="callName" id="callName"><br/></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Date of Birth<sup class="star">*</sup></label></td>
+                            <td><input type="date" name="dob" value='2000-10-01'></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Your age (In years)</label></td>
+                            <td><input type="number" name="age" min="18" max="35"></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>NIC Number<sup class="star">*</sup></label></td>
+                            <td><input type="text" name="nic" id="nic"></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Contact Number<sup class="star">*</sup></label></td>
+                            <td><input type="text" name="conNum" id="conNum"></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Address</label><sup class="star">*</sup></td>
+                            <td><textarea name="add" rows="5" cols="30" id="add"></textarea><br/></td>
+                        </tr>
+                        <tr>
+                             <td><label class='label'>District</label></td>
+                             <td>
+                                 <select name="subjects" size="12" multiple>
+                                     <option>Colombo</option>
+                                     <option>Mathematics</option>
+                                     <option>Gampaha</option>
+                                     <option>Kalutara</option>
+                                     <option>Kandy</option>
+                                     <option>Matale</option>
+                                     <option>Nuwara Eliya</option>
+                                     <option>Galle</option>
+                                     <option>Hambantota</option>
+                                     <option>Jaffna</option>
+                                     <option>Kilinochchi</option>
+                                     <option>Mannar</option>
+                                     <option>Vavuniya</option>
+                                     <option>Mullaitivu</option>
+                                     <option>Batticaloa</option>
+                                     <option>Ampara</option>
+                                     <option>Trincomalee</option>
+                                     <option>Kurunegala</option>
+                                     <option>Puttalam</option>
+                                     <option>Anuradhapura</option>
+                                     <option>Polonnaruwa</option>
+                                     <option>Badulla</option>
+                                     <option>Moneragala</option>
+                                     <option>Ratnapura</option>
+                                     <option>Kegalle</option>
+                                 </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Province</label></td>
+                             <td>
+                                 <select name="subjects" size="9" multiple>
+                                     <option>Northern</option>
+                                     <option>North Central</option>
+                                     <option>Eastern</option>
+                                     <option>North Western</option>
+                                     <option>Western</option>
+                                     <option>Central</option>
+                                     <option>Sabaragamuwa</option>
+                                     <option>Uva</option>
+                                     <option>Southern</option>
+                                 </select></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>What is the closest center/s to your home?<sup class="star">*</sup></label></td>
+                            <td>
+                                 <input type="checkbox" name="center" value="col">Colombo<br/>
+                                 <input type="checkbox" name="center" value="kal">Kalutara<br/>
+                                 <input type="checkbox" name="center" value="kan">Kandy<br/>
+                                 <input type="checkbox" name="center" value="gam">Gampaha<br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>What time can you report for duty?<sup class="star">*</sup></label></td>
+                            <td><input type="time"  name="time" value="08:30:00"></td>
+                        </tr>
+                        <tr>
+                            <td><label class='label'>Attach your CV here<sup class="star">*</sup></label></td>
+                            <td><input type="file" name="data"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                            <td><input type="reset" value="Clear Form"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><span class="star"><sup>*</sup> Required</span></td>
+                        </tr>
+                    </table>
+                </form>
+        </div>
+    </body>
+</html>
